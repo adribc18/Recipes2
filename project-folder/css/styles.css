@@ -1,0 +1,386 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.brand {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content:left;
+}
+
+nav ul{
+    float: right;
+    margin-top:-50px;
+}
+
+
+nav ul li {
+    font-size: 20px;
+    display: inline-block;
+    margin:0 40px;
+}
+
+nav {
+    background-color:#FFB000;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hero { 
+    position: relative; 
+    height: 100vh; 
+    margin-top: 5px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: flex-end; 
+    justify-content: center; 
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/project-folder/images/hero-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(80%);
+}
+
+.hero-content {
+    position: relative;
+    color: black;
+    text-align: center;
+    background-color: white;
+    letter-spacing: 3px;
+    margin-top: 400px;
+    margin-bottom: 70px;
+    font-size: 1.3rem;
+    font-weight: 600px;
+    padding: 0 30px;
+
+}
+
+.categories {
+    display: flex; /* Utiliza Flexbox para el contenedor */
+    flex-wrap: wrap;  /* Permite que los elementos se ajusten a la siguiente línea */
+    width: 91%;
+    margin: 0 90px;
+}
+
+.photo-container {
+    float: right; /* Hace que los contenedores de fotos se alineen horizontalmente */
+    padding: 36px; /* Espacio alrededor de cada contenedor de fotos */
+    text-align: center; /* Centra el texto debajo de cada foto */
+    
+
+}
+.photo-container img {
+    width: 398px;
+    height:250px;
+    object-fit: cover;
+    margin-left: -28px;
+}
+.categories h2{
+    font-size: 40px;
+    justify-content: left;
+    margin-bottom: -10PX;
+}
+.categories  p{
+    font-size: 25px;
+
+}
+
+.categories h3{
+    display: flex;
+    justify-content:center ;
+    font-weight: lighter; /* quita la negrita del las etiquetas h */
+    margin-left: -20px;
+}
+
+.recipes {
+    background-color: #DDE6ED;
+    display: flex; /* Utiliza Flexbox para el contenedor */
+    flex-wrap: wrap;  /*Permite que los elementos se ajusten a la siguiente línea */
+    width: 100%;
+}
+
+.photo-container2 {
+    float: right; /*Hace que los contenedores de fotos se alineen horizontalmente */
+    width: 300px; /*Ajusta el ancho de cada contenedor de fotos */
+    text-align: center; /* Centra el texto debajo de cada foto */
+    margin-left: 30px;/* ponemos el ,margen de la foto para moverla*/
+
+}
+
+.photo-container2 img {
+    width: 300px;
+    height:200px;
+    object-fit: cover;
+    margin-left: 60px;
+    margin-bottom: 60px;
+
+}
+
+.recipes h2 {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 40px;
+    margin: 20px 90px;
+}
+
+.recipes p {
+    font-size: 25px;
+    margin: 20px 90px 20px 90px;
+}
+
+.blanco {
+    position: relative;
+    top: -50px;
+    left:20px;
+    background-color: white;
+    text-align: center; 
+    font-size: 22px;
+    padding:10px 30px;
+    font-weight: lighter;
+    display: inline-block;
+    width: 240px;
+    text-align: center;
+    margin-left: 40px;
+    margin-top: -20px;
+}
+
+
+.categories {
+    display: flex; 
+    flex-wrap: wrap;
+    width: 91%;
+    margin: 0 90px;
+}
+
+.where {
+    display: flex;
+    flex-wrap: wrap;
+    width: 91%;
+    margin: 0 90px;
+}
+
+.photo-container3 {
+    float: right;
+    width: 420px;
+    padding: 10px;
+    text-align: center;
+
+}
+.photo-container3 img {
+    width: 390px;
+    height:250px;
+    object-fit: cover;
+    margin-left: -28px;
+    border: 8px solid #DDE6ED; /* darle un borde a la imagen*/
+
+}
+
+.where h2{
+    font-size: 40px;
+    justify-content: left;
+    margin-bottom: 15px;
+}
+
+.where h3{
+    font-size: 20px;
+    justify-content: left;
+    margin-bottom: -10PX;
+}
+.where  p{
+    font-size: 25px;
+    margin-top: -2px;
+
+}
+
+.photo-container3 h3{
+    display: flex;
+    justify-content:center ;
+    font-weight: lighter;
+    margin-bottom: 50px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding:20px 70px;
+    background-color: #FFB000;
+    color: black;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: black;
+    text-decoration: none;
+}
+
+
+.footer-links a:hover {
+    text-decoration: underline; 
+}
+
+
+/*------------ desde aqui comienza el codigo de la receta------------- */
+
+
+
+.hero1{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero1::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(/project-folder/images/burger.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(80%);
+}
+
+.hero-title1 {
+    font-size: 2rem;
+    font-weight: 400px;
+}
+
+.hero-content1 {
+    position: relative;
+    color: black;
+    text-align: center;
+    background-color: white;
+    padding: 0 30px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-top: 410px;
+}
+
+.time {
+    background-color:#DDE6ED;
+    padding: 20px;
+}
+
+.lista {
+    display: flex;
+    flex-wrap: wrap; 
+    list-style: none;
+    gap:15px;
+    font-size: 1.2rem;
+    align-items: flex-start;
+}
+
+.lista li {
+    width: 30%;
+    text-align: left;
+}
+
+.negro{
+    font-weight: bold;
+
+}
+.time h1 {
+    margin-bottom: -20px;
+    margin-left: 40px;
+}
+
+.star {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.strella h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.estrellas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.estrellas span {
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+
+.checked {
+    color: #A94438;
+  }
+
+.boton {
+    border: 1px solid #A94438;
+    background-color: #A94438;
+    padding: 10px 30px;
+    border-radius: 50px;
+    color: white;
+    margin-left: -10px;
+}
+
+.im{
+    display: flex;
+    justify-content: center;
+    margin-left: 160px;
+    margin-top: -34px;
+}
+
+.comentario{
+    background-color: lightgrey;
+    text-align: center;
+    width: 60%;
+    height: 10%;
+    margin: 30px 220px;
+    padding: 10px 110px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 350px;
+}
+
+.directiones {
+    width: 30%;
+    height: 120px;
+    padding: 0;
+}
+
+.ingredients ul, .directions ol {
+    list-style-type: none;
+}
+
+.container h2{
+
+    margin-left: 20px;
+
+}
